@@ -29,6 +29,6 @@ export const ContactInfo = [
 
 export const socialMedia = [
     { src: "facebook.svg", alt: "facebook logo" },
-    { src: "twitte.svg", alt: "twitter logo" },
+    { src: "twitter.svg", alt: "twitter logo" },
     { src: "instagram.svg", alt: "instagram logo" },
 ];

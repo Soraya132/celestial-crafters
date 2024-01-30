@@ -20,12 +20,9 @@ module.exports = {
       colors: {
         primary: '#131424',
         secondary: '#393A47',
-        accent: '#F13024',
+        accent: 'blue', 
       },
       backgroundImage: {
-        explosion: 'url("/bg-explosion.png")',
-        circles: 'url("/bg-circles.png")',
-        circleStar: 'url("/circle-star.svg")',
         site: 'url("/about.jpg")',
       },
       animation: {

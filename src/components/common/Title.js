@@ -4,7 +4,7 @@ const Title = ({ text, children, fontSize, fontWeight }) => {
   text = text.split(" ");
   return (
     <MotionDiv
-      variants={fadeIn("right", 0.5)}
+      variants={fadeIn("right", 0.2)}
       initial="hidden"
       whileInView="show"
       className=" border-b pb-3 border-white/20 border-dashed mb-5 lg lg:mb-0 "

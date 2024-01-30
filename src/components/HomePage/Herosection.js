@@ -11,16 +11,16 @@ const Herosection = () => {
         <MotionDiv
           variants={fadeIn("down", 0.2)}
           initial="hidden"
-          animate="show"
+          whileInView="show"
           className="flex flex-col h-full gap-6 items-center text-center justify-center pt-10"
         >
           {/* title */}
-          <h1 className="h1 mb-0 2xl:text-5xl text-white ">
+          <h1 className="h1 mb-0 2xl:text-5xl text-white text-gradient ">
             Celestial Crafters
           </h1>
           {/* subtitle */}
-          <h4 className="text-white texl-lg sm:text-3xl 2xl:text-4xl">
-            dive into world of technology
+          <h4 className="text-white texl-lg sm:text-3xl 2xl:text-4xl lg:w-[70%]">
+          Crafting a Celestial Future in Tech and Diversity
           </h4>
           {/* btn */}
           <div className="flex">

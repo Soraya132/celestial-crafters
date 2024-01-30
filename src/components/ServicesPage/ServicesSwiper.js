@@ -2,9 +2,10 @@
 import { RxArrowRight } from "react-icons/rx";
 import {
   FaCode,
-  FaDesktop,
+  
+  FaProjectDiagram,
   FaDatabase,
-  FaServer,
+  FaShieldAlt ,
   FaChartLine,
   FaQuestion,
 } from "react-icons/fa";
@@ -12,27 +13,28 @@ import {
 const servicesData = [
   {
     icon: <FaCode />,
-    title: "Full-Stack Development",
-    description:
-      "Crafting robust server-side applications with the MERN stack.",
+    title: "Web Development",
+    description:"Crafting responsive and user-friendly websites and applications tailored to your unique needs.",
+      
+
   },
   {
-    icon: <FaDesktop />,
-    title: "Responsive Frontend Design",
+    icon: <FaProjectDiagram/>,
+    title: "Project Management",
     description:
-      "Creating visually appealing and user-friendly interfaces across devices.",
+      `Efficiently plan, execute, and oversee projects from inception to successful completion.`,
   },
   {
     icon: <FaDatabase />,
-    title: "Custom Web Applications",
+    title: "Data Analytics",
     description:
-      "Building tailor-made solutions for unique business requirements.",
+     `Transform your data into actionable insights with our data analytics services.`
   },
   {
-    icon: <FaServer />,
-    title: "API Development and Integration",
+    icon: <FaShieldAlt />,
+    title: "Cybersecurity",
     description:
-      "Build and integrate RESTful APIs for seamless data communication.",
+      `Protect your digital assets with our robust cybersecurity solutions. From threat detection to data encryption.`
   },
   {
     icon: <FaChartLine />,
@@ -50,15 +52,15 @@ const servicesData = [
 const ServicesSwiper = () => {
   return (
     <div className="grid  md:grid-cols-2 xl:grid-cols-3 py-8 gap-3 ">
-        {servicesData.map((service) => {
+        {servicesData.map((service,index) => {
           return (
-            <div >
+            <div key={index}>
               <div className=" h-full rounded-lg px-6 py-8 flex flex-col gap-x-6 group justify-center items-center ">
                 {/* icon */}
                 <div className="text-4xl text-accent mb-4">{service.icon}</div>
                 {/* title and description */}
                 <div className="mb-8 text-center">
-                  <div className="mb-2 text-lg">{service.title}</div>
+                  <div className="mb-2 text-lg text-white">{service.title}</div>
                   <p className="leading-normal">
                     {service.description}
                   </p>

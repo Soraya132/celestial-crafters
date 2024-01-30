@@ -1,15 +1,16 @@
 import "./globals.css";
 import Nav from "@/components/Navbar/Nav";
 export const metadata = {
-  title: "Soraya's Portfolio",
-  description: "web developer and Freelancer",
+  title: "Celestial Crafters",
+  description: "Beyond Boundaries: Crafting a Celestial Future in Tech and Diversity",
 };
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="scroll-smooth">
         <div>
-          <Nav />
+        <Nav />
+         
           {children}
         </div>
       </body>

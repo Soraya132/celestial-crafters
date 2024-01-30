@@ -14,9 +14,9 @@
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
-  background-color: #f13024;
-  width: 18px;
-  height: 18px;
+  background-color: blue;
+  width: 10px;
+  height: 10px;
 }
 .swiper-slide {
   height: auto !important ;
@@ -29,7 +29,7 @@
 .swiper-button-prev:after,
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
-  color: #f13024;
+  color: blue;
 }
 
 @layer base {
@@ -40,7 +40,7 @@
     @apply text-[35px] leading-tight md:text-[60px] md:leading-[1.3] mb-8 font-semibold;
   }
   .h2 {
-    @apply text-[35px]  leading-tight  md:leading-[1.3];
+    @apply text-[26px]  leading-tight  md:leading-[1.3] text-white pt-2;
   }
   p {
     @apply leading-[1.7] text-white/60 font-light text-lg;
@@ -61,25 +61,48 @@
   }
   .about__image {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-      url("/about.jpg");
+      url("/1 (8).jpg");
     background-position: top;
     background-size: cover;
   }
   .about__get__in_touch {
     @apply flex gap-2 justify-start items-center text-white/60 text-lg;
   }
-  
- 
 }
 
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active  {
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
   transition: background-color 5000s;
-  -webkit-text-fill-color:white!important;
+  -webkit-text-fill-color: white !important;
 }
 .max-container {
   max-width: 1440px;
   margin: 0 auto;
+}
+body {
+  scroll-behavior: smooth !important;
+}
+.gradient-bg {
+  background: rgb(30, 10, 226);
+  background: linear-gradient(
+    90deg,
+    rgba(30, 10, 226, 0.9668242296918768) 3%,
+    rgba(0, 255, 252, 0.9668242296918768) 45%,
+    rgba(0, 194, 255, 0.9668242296918768) 94%,
+    rgba(8, 25, 218, 1) 100%
+  );
+}
+.text-gradient {
+  background: rgb(10, 36, 226);
+  background: linear-gradient(
+    90deg,
+    rgba(10, 36, 226, 0.9668242296918768) 3%,
+    rgba(0, 249, 255, 0.9668242296918768) 45%,
+    rgba(0, 194, 255, 0.9668242296918768) 87%,
+    rgba(0, 18, 255, 0.9668242296918768) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
