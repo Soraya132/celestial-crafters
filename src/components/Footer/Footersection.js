@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { socialMedia } from "@/data";
+import {socialMedia } from "@/data";
+import Link from "next/link";
 const Footersection = () => {
   return (
     <footer className=" bg-black py-20 px-10 lg:px-32">
@@ -20,12 +21,19 @@ const Footersection = () => {
             Company
           </p>
           <div className="flex items-center justify-center gap-5 mt-8">
-            {socialMedia.map((icon) => (
+            {socialMedia.map((item,index) => (
               <div
                 className="flex justify-center items-center w-12 h-12 bg-white rounded-full"
-                key={icon.alt}
+                key={index + item.info}
               >
-                <img src={icon.src} alt={icon.alt} width={24} height={24} />
+                 <Link
+              href={item.page}
+              target={item.page === '' ? '' : '_blank'}
+              
+            >
+              <div className="text-accent text-3xl hover:text-black">{item.icon}</div>
+              
+            </Link>
               </div>
             ))}
           </div>

@@ -11,43 +11,40 @@ import { Keyboard, Scrollbar, Pagination } from "swiper/modules";
 
 import { FaUser, FaEnvelope } from "react-icons/fa";
 import Title from "../common/Title";
-import { MotionDiv } from "../MotionDiv";
-import { fadeIn } from "@/variants";
 const Teamsection = () => {
   const teamMembers = [
     {
       id: 1,
       name: "John Doe",
       role: "Founder & CEO",
-      email: "john@example.com",
+
       bio: "Passionate visionary with a commitment to innovation and excellence.",
     },
     {
       id: 2,
       name: "Jane Smith",
       role: "Lead Developer",
-      email: "jane@example.com",
+
       bio: "Experienced developer with a knack for turning ideas into reality.",
     },
     {
       id: 3,
       name: "Bob Johnson",
       role: "Data Analyst",
-      email: "bob@example.com",
+
       bio: "Analytical thinker skilled in deciphering complex datasets.",
     },
     {
       id: 4,
       name: "Alice Williams",
       role: "Project Manager",
-      email: "alice@example.com",
+
       bio: "Organized and strategic project manager with a focus on delivering successful outcomes.",
     },
     {
       id: 5,
       name: "Alice Williams",
       role: "Project Manager",
-      email: "alice@example.com",
       bio: "Alice, our project wizard, ensures everything runs like clockwork.",
     },
   ];
@@ -106,12 +103,6 @@ const Teamsection = () => {
                     <h3 className="mb-2 text-lg text-white">{member.name}</h3>
                     <p>{member.role}</p>
                     <p className="leading-normal">{member.bio}</p>
-                    <div className="flex gap-3 items-center">
-                      <FaEnvelope className="text-accent" />
-                      <a href={`mailto:${member.email}`} className="text-white">
-                        {member.email}
-                      </a>
-                    </div>
                   </div>
                 </SwiperSlide>
               );

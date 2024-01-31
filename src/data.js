@@ -1,34 +1,41 @@
-import {  FaLinkedin } from "react-icons/fa";
-import { RiRedPacketLine,RiGithubLine } from "react-icons/ri";
-import { IoMdLocate } from "react-icons/io";
+import {  FaLinkedin,FaTiktok,FaPhone  } from "react-icons/fa";
+import { RiRedPacketLine } from "react-icons/ri";
+
 
 //  contact information
 export const ContactInfo = [
   {
-    icon: <IoMdLocate />,
-    info: "kenya",
-    page: "",
-  },
-  {
-    icon: <RiGithubLine />,
-    info: "+24875985734",
-    page: "tel:+2687543897",
+    icon: <FaPhone />,
+    info: "+254-7-27-493-854",
+    page: "tel:+254-7-27-493-854",
   },
   {
     icon: <RiRedPacketLine />,
-    info: "celestial crafters@gmail.com",
-    page: "mailto:celestial crafters@gmail.com",
+    info: "inquirecelestialcrafters@gmail.com",
+    page: "mailto:inquirecelestialcrafters@gmail.com",
   },
   {
     icon: <FaLinkedin />,
-    info: "celestial crafters",
-    page: "https://www.linkedin.com/in/soraya-haidary-11447921a/",
+    info: "Celestial Crafters",
+    page: "https://www.linkedin.com/company/celestialcrafters/",
+  },
+  {
+    icon: <FaTiktok />,
+    info: "Celestial crafters",
+    page: "https://www.tiktok.com/@celestial_crafters?_t=8jTAoiI3ZEE&_r=1",
   },
 ];
 ;
 
 export const socialMedia = [
-    { src: "facebook.svg", alt: "facebook logo" },
-    { src: "twitter.svg", alt: "twitter logo" },
-    { src: "instagram.svg", alt: "instagram logo" },
+  {
+    icon: <FaTiktok />,
+    info: "https://www.tiktok.com/@celestial_crafters?_t=8jTAoiI3ZEE&_r=1",
+    page: "https://www.tiktok.com/@celestial_crafters?_t=8jTAoiI3ZEE&_r=1",
+  },
+  {
+    icon: <FaLinkedin />,
+    info: "celestial crafters",
+    page: "https://www.linkedin.com/company/celestialcrafters/",
+  },
 ];

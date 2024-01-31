@@ -20,7 +20,7 @@ const Herosection = () => {
           </h1>
           {/* subtitle */}
           <h4 className="text-white texl-lg sm:text-3xl 2xl:text-4xl lg:w-[70%]">
-          Crafting a Celestial Future in Tech and Diversity
+          Your Imagination And Craft
           </h4>
           {/* btn */}
           <div className="flex">

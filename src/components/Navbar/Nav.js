@@ -1,11 +1,11 @@
-"use client";
+ "use client";
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-// nav data
-export const navData = [
+// // nav data
+ export const navData = [
   { name: "home", path: "/" },
   { name: "about", path: "#about" },
   { name: "services", path: "#services" },
@@ -14,10 +14,17 @@ export const navData = [
 ];
 const Nav = () => {
   const [show, setShow] = useState(false);
+  const handleToggle = () => {
+    setShow(!show);
+  };
   return (
-    <div className="overflow-x-hidden gradient-bg">
+    <motion.div 
+    initial={{ hieght: "110px" }}
+        animate={show ? { height:"auto", } : { height:"110px",overflow:"hidden" }}
+        transition={{ duration: 0.4}}
+    className={`overflow-x-hidden scrollbar-none`} style={{ background: 'linear-gradient(to right, #f0f0f0, #e1e1e1)' }}>
       <nav className="flex flex-col items-center justify-center">
-        <div className="flex justify-between items-center px-3 lg:px-0 w-full lg:w-[60%]  ">
+        <div className="flex items-center px-3 lg:px-0 w-full lg:w-[90%]  justify-between ">
           <div>
             {" "}
             <Image
@@ -43,29 +50,32 @@ const Nav = () => {
             })}
           </ul>
           <div className="md:hidden" onClick={() => setShow(!show)}>
-            <FaBars size={35} color="white" />
+            <FaBars size={35} color="black" />
           </div>
         </div>
       </nav>
+      <div className="overflow-hidden">
       <motion.ul
-        initial={{ x: "100%" }}
-        animate={show ? { x: 0 } : { x: "100%" }}
-        transition={{ duration: 0.6 }}
-        className="flex md:hidden items-end capitalize h-screen w-[40%] text-md flex-col absolute top-28 z-40 right-0 bg-black py-10 px-5 "
+        initial={{ y: "-100%" }}
+        animate={show ? { y: 0 } : { y: "-100%" }}
+        transition={{ duration: 0.3 }}
+        className="flex md:hidden items-start capitalize  text-md flex-col  z-40  py-10 px-5 overflow-hidden "
       >
         {navData.map((link, index) => {
           return (
             <li
               key={index + link.name}
-              className="my-2 text-white hover:text-blue-700 transition-all duration-75"
-              onClick={() => setShow(!show)}
+              className="my-2 text-black hover:text-blue-700 transition-all duration-75"
+              onClick={handleToggle}
             >
               <Link href={link.path}>{link.name}</Link>
             </li>
           );
         })}
       </motion.ul>
-    </div>
+      </div>
+     
+    </motion.div>
   );
 };
 export default Nav;
