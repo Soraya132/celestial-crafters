@@ -11,43 +11,52 @@ import { Keyboard, Scrollbar, Pagination } from "swiper/modules";
 
 import { FaUser, FaEnvelope } from "react-icons/fa";
 import Title from "../common/Title";
+import Image from "next/image";
 const Teamsection = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "John Doe",
+      name: "Serah Muthoni KAMAU",
       role: "Founder & CEO",
-
-      bio: "Passionate visionary with a commitment to innovation and excellence.",
+      country: "Kenya",
+      bio: "Passionate visionary with a commitment to innovation and excellence. Leading the way towards a brighter future.",
+      photo: "/sera.jpg"
     },
     {
       id: 2,
-      name: "Jane Smith",
-      role: "Lead Developer",
-
-      bio: "Experienced developer with a knack for turning ideas into reality.",
+      name: "Esther Wangui Gicheha",
+      role: "Data Analyst",
+      country: "Kenya",
+      bio: "Experienced developer with a talent for transforming concepts into reality. Harnessing the power of data to drive informed decision-making.",
+      photo: "/esther.jpeg"
     },
     {
       id: 3,
-      name: "Bob Johnson",
-      role: "Data Analyst",
-
-      bio: "Analytical thinker skilled in deciphering complex datasets.",
+      name: "Kosisochukwu Benjamin",
+      role: "IT Security Specialist",
+      country: "Nigeria",
+      bio: "Analytical thinker skilled in deciphering complex datasets. Ensuring the fortification of our digital infrastructure with top-notch security measures.",
+      photo: "/benjamin.jpg"
     },
     {
       id: 4,
-      name: "Alice Williams",
+      name: "Alphonsus Chioma Tracy",
       role: "Project Manager",
-
-      bio: "Organized and strategic project manager with a focus on delivering successful outcomes.",
+      country: "Nigeria",
+      bio: "Organized and strategic project manager with a relentless focus on delivering successful outcomes. Turning challenges into triumphs with a structured approach.",
+      photo: "/tracey.jpg"
     },
     {
       id: 5,
-      name: "Alice Williams",
-      role: "Project Manager",
-      bio: "Alice, our project wizard, ensures everything runs like clockwork.",
+      name: "Cassandra Lelei",
+      role: "Lead Software Developer",
+      country: "Kenya",
+      bio: "Cassandra, our project wizard, ensures everything runs like clockwork. Spearheading software development with creativity and precision.",
+      photo: ""
     },
-  ];
+];
+
+
 
   return (
     <div id="team" className="bg-black">
@@ -89,24 +98,34 @@ const Teamsection = () => {
             modules={[Keyboard, Scrollbar, Pagination]}
             className="mySwiper"
           >
-            {teamMembers.map((member) => {
-              return (
-                <SwiperSlide
-                  key={member.id}
-                  className="grid  md:grid-cols-2 xl:grid-cols-3 py-8 gap-5 rounded-lg h-[250px] overflow-x-hidden overflow-y-hidden "
-                >
-                  <div
-                    key={member.id}
-                    className=" h-full px-3 py-5 flex flex-col gap-x-6 border border-accent"
-                  >
-                    <FaUser className="text-4xl text-accent mb-1" />
-                    <h3 className="mb-2 text-lg text-white">{member.name}</h3>
-                    <p>{member.role}</p>
-                    <p className="leading-normal">{member.bio}</p>
-                  </div>
-                </SwiperSlide>
-              );
-            })}
+           <Swiper>
+  {teamMembers.map((member) => (
+    <SwiperSlide
+      key={member.id}
+      className="grid  md:grid-cols-2 xl:grid-cols-3 py-8 gap-5 rounded-lg h-[250px] overflow-x-hidden overflow-y-hidden"
+    >
+      <div
+        key={member.id}
+        className="h-full px-3 py-5 flex flex-col gap-x-6 border border-accent"
+      >
+        {member.photo ? (
+          <Image
+            src={member.photo} // Assuming member.photo contains the path or URL of the photo
+            alt={member.name}
+            height={70}
+            width={70}
+            className="w-[70px] h-[70px] rounded-full mx-auto mb-2 object-fill"
+          />
+        ) : (
+          <FaUser className="text-4xl text-accent mx-auto mb-2" />
+        )}
+        <h3 className="mb-2 text-lg text-white">{member.name}</h3>
+        <p>{`${member.role} - ${member.country}`}</p>
+        <p className="leading-normal">{member.bio}</p>
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>;
           </Swiper>
         </div>
       </div>

@@ -19,8 +19,8 @@ const Herosection = () => {
             Celestial Crafters
           </h1>
           {/* subtitle */}
-          <h4 className="text-white texl-lg sm:text-3xl 2xl:text-4xl lg:w-[70%]">
-          Your Imagination And Craft
+          <h4 className="text-white texl-lg sm:text-3xl 2xl:text-4xl lg:w-[80%]">
+          Your Imagination Our Craft
           </h4>
           {/* btn */}
           <div className="flex">
