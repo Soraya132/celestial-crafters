@@ -19,7 +19,7 @@ const Teamsection = () => {
       name: "Serah Muthoni KAMAU",
       role: "Founder & CEO",
       country: "Kenya",
-      bio: "Passionate visionary with a commitment to innovation and excellence. Leading the way towards a brighter future.",
+      bio: "Passionate visionary committed to innovation and excellence. Leading the way towards a brighter future.",
       photo: "/sera.jpg"
     },
     {
@@ -51,10 +51,27 @@ const Teamsection = () => {
       name: "Cassandra Lelei",
       role: "Lead Software Developer",
       country: "Kenya",
-      bio: "Cassandra, our project wizard, ensures everything runs like clockwork. Spearheading software development with creativity and precision.",
-      photo: ""
+      bio: "Creative powerhouse spearheading software development with precision and innovation. Ensures seamless project execution.",
+      photo: "/cassandra.jpg"
     },
-];
+    {
+      id: 6,
+      name: "Soraya Haidary",
+      role: "CTO",
+      country: "Afghanistan",
+      bio: "Technology virtuoso leading with innovation and determination. Pioneering advancements in tech with a global perspective.",
+      photo: "/soraya.jpeg"
+    },
+    {
+      id: 7,
+      name: "Aji Ndidiamaka",
+      role: "Supervisor/Executive Assistant",
+      country: "Nigeria",
+      bio: "Dedicated supervisor and executive assistant. Facilitates smooth operations with efficiency and attention to detail.",
+      photo: "/aji.jpg"
+    },
+  ];
+  
 
 
 
@@ -114,10 +131,10 @@ const Teamsection = () => {
             alt={member.name}
             height={70}
             width={70}
-            className="w-[70px] h-[70px] rounded-full mx-auto mb-2 object-fill"
+            className="w-[70px] h-[70px] rounded-full mx-auto mb-2 object-cover"
           />
         ) : (
-          <FaUser className="text-4xl text-accent mx-auto mb-2" />
+          <FaUser className="text-4xl text-accent  mx-auto mb-2" />
         )}
         <h3 className="mb-2 text-lg text-white">{member.name}</h3>
         <p>{`${member.role} - ${member.country}`}</p>
