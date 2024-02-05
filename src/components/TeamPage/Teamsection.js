@@ -24,19 +24,19 @@ const Teamsection = () => {
     },
     {
       id: 2,
-      name: "Esther Wangui Gicheha",
-      role: "Data Analyst",
-      country: "Kenya",
-      bio: "Experienced developer with a talent for transforming concepts into reality. Harnessing the power of data to drive informed decision-making.",
-      photo: "/esther.jpeg"
+      name: "Soraya Haidary",
+      role: "CTO",
+      country: "Afghanistan",
+      bio: "Technology virtuoso leading with innovation and determination. Pioneering advancements in tech with a global perspective.",
+      photo: "/soraya.jpeg"
     },
     {
       id: 3,
-      name: "Kosisochukwu Benjamin",
-      role: "IT Security Specialist",
+      name: "Aji Ndidiamaka",
+      role: "Supervisor/Executive Assistant",
       country: "Nigeria",
-      bio: "Analytical thinker skilled in deciphering complex datasets. Ensuring the fortification of our digital infrastructure with top-notch security measures.",
-      photo: "/benjamin.jpg"
+      bio: "Dedicated supervisor and executive assistant. Facilitates smooth operations with efficiency and attention to detail.",
+      photo: "/aji.jpg"
     },
     {
       id: 4,
@@ -48,28 +48,30 @@ const Teamsection = () => {
     },
     {
       id: 5,
+      name: "Esther Wangui Gicheha",
+      role: "Data Analyst",
+      country: "Kenya",
+      bio: "Experienced developer with a talent for transforming concepts into reality. Harnessing the power of data to drive informed decision-making.",
+      photo: "/esther.jpeg"
+    },
+    {
+      id: 6,
+      name: "Kosisochukwu Benjamin",
+      role: "IT Security Specialist",
+      country: "Nigeria",
+      bio: "Analytical thinker skilled in deciphering complex datasets. Ensuring the fortification of our digital infrastructure with top-notch security measures.",
+      photo: "/benjamin.jpg"
+    },
+   
+    {
+      id: 7,
       name: "Cassandra Lelei",
       role: "Lead Software Developer",
       country: "Kenya",
       bio: "Creative powerhouse spearheading software development with precision and innovation. Ensures seamless project execution.",
       photo: "/cassandra.jpg"
     },
-    {
-      id: 6,
-      name: "Soraya Haidary",
-      role: "CTO",
-      country: "Afghanistan",
-      bio: "Technology virtuoso leading with innovation and determination. Pioneering advancements in tech with a global perspective.",
-      photo: "/soraya.jpeg"
-    },
-    {
-      id: 7,
-      name: "Aji Ndidiamaka",
-      role: "Supervisor/Executive Assistant",
-      country: "Nigeria",
-      bio: "Dedicated supervisor and executive assistant. Facilitates smooth operations with efficiency and attention to detail.",
-      photo: "/aji.jpg"
-    },
+   
   ];
   
 
