@@ -71,6 +71,14 @@ const Teamsection = () => {
       bio: "Creative powerhouse spearheading software development with precision and innovation. Ensures seamless project execution.",
       photo: "/cassandra.jpg"
     },
+    {
+      id: 8,
+      name: "Mary Wanjiru kaberia",
+      role: "HR Manager",
+      country: "Kenya",
+      bio: "Our HR Manager fosters a thriving workplace with efficiency and empathy",
+      photo: "/HR.jpg"
+    },
    
   ];
   
