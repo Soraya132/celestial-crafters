@@ -79,6 +79,14 @@ const Teamsection = () => {
       bio: "Our HR Manager fosters a thriving workplace with efficiency and empathy",
       photo: "/HR.jpg"
     },
+    {
+      id: 9,
+      name: "Emuesiri Ekevwe",
+      role: "social media manager",
+      country: "Nigeria",
+      bio: "Lead our company's social media presence with strategic planning and engaging content creation.",
+      photo: "/socail.jpg"
+    },
    
   ];
   
