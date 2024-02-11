@@ -87,6 +87,14 @@ const Teamsection = () => {
       bio: "Lead our company's social media presence with strategic planning and engaging content creation.",
       photo: "/socail.jpg"
     },
+     {
+      id: 10,
+      name: "Akinsanya oluwatosin",
+      role: "product manager",
+      country: "Sout Africa",
+      bio: "Our product manager oversees the developmentand enhancement of our company's offering",
+      photo: "/product.jpg"
+    },
    
   ];
   
